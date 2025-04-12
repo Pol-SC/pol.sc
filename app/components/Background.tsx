@@ -261,7 +261,7 @@ const SpinningCubesBackground = ({ children }: { children: React.ReactNode }) =>
       };
       
       scene.add(cubeGroup);
-      // @ts-ignore
+      // @ts-expect-error
       cubes.push(cubeGroup);
     }
     
