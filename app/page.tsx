@@ -1,12 +1,11 @@
 "use client"
 
-import Image from "next/image";
 import Background from "./components/Background";
 import { BackgroundContext } from "./providers"; 
 import { useContext } from "react";
 
 export default function Home() {
-  const { isLoaded, setIsLoaded } = useContext(BackgroundContext);
+  const { isLoaded } = useContext(BackgroundContext);
   return (
     <Background>
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">

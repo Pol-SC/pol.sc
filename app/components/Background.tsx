@@ -1,11 +1,11 @@
 "use client"
-import React, { useRef, useEffect, useState, useContext } from 'react';
+import React, { useRef, useEffect, useContext } from 'react';
 import * as THREE from 'three';
 import { BackgroundContext } from '../providers';
 
 const SpinningCubesBackground = ({ children }: { children: React.ReactNode }) => {
   const containerRef = useRef<HTMLDivElement>(null);
-  const { isLoaded, setIsLoaded } = useContext(BackgroundContext);
+  const { setIsLoaded } = useContext(BackgroundContext);
   
   useEffect(() => {
     if (!containerRef.current) return;
@@ -102,7 +102,6 @@ const SpinningCubesBackground = ({ children }: { children: React.ReactNode }) =>
     
     // Add a second inner ring
     const innerCubes: THREE.Mesh[] = [];
-    const innerRadius = 5;
     
     // Create texture loader
     const textureLoader = new THREE.TextureLoader();
