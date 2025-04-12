@@ -261,50 +261,8 @@ const SpinningCubesBackground = ({ children }: { children: React.ReactNode }) =>
       };
       
       scene.add(cubeGroup);
+      // @ts-ignore
       cubes.push(cubeGroup);
-      
-    //   // Inner ring cubes
-    //   if (i % 2 === 0) {
-    //     const innerGeometry = new THREE.BoxGeometry(size * 0.8, size * 0.8, size * 0.8);
-        
-    //     // Create inner background materials
-    //     const innerBackgroundMaterials = backgroundMaterials.map(mat => mat.clone());
-        
-    //     // Create inner texture materials
-    //     const innerTextureMaterials = textureMaterials.map(mat => mat.clone());
-        
-    //     // Create inner background mesh
-    //     const innerBackgroundMesh = new THREE.Mesh(innerGeometry, innerBackgroundMaterials);
-    //     innerBackgroundMesh.scale.set(1.01, 1.01, 1.01);
-        
-    //     // Create inner texture mesh
-    //     const innerTextureMesh = new THREE.Mesh(innerGeometry, innerTextureMaterials);
-        
-    //     // Create a group to hold both inner meshes
-    //     const innerCubeGroup = new THREE.Group();
-    //     innerCubeGroup.add(innerBackgroundMesh);
-    //     innerCubeGroup.add(innerTextureMesh);
-        
-    //     const innerAngle = angle + Math.PI / cubeCount;
-    //     innerCubeGroup.position.x = Math.cos(innerAngle) * innerRadius;
-    //     innerCubeGroup.position.y = Math.sin(innerAngle) * innerRadius;
-    //     innerCubeGroup.position.z = 0;
-        
-    //     innerCubeGroup.userData.rotationSpeed = {
-    //       x: Math.random() * 0.006 + 0.002,
-    //       y: Math.random() * 0.006 + 0.002,
-    //       z: Math.random() * 0.006 + 0.002
-    //     };
-        
-    //     innerCubeGroup.userData.orbit = {
-    //       angle: innerAngle,
-    //       speed: -0.002,
-    //       radius: innerRadius
-    //     };
-        
-    //     scene.add(innerCubeGroup);
-    //     innerCubes.push(innerCubeGroup);
-    //   }
     }
     
     // Add particle system for sparkle effect
