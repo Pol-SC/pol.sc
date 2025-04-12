@@ -261,7 +261,7 @@ const SpinningCubesBackground = ({ children }: { children: React.ReactNode }) =>
       };
       
       scene.add(cubeGroup);
-      // @ts-expect-error
+      // @ts-expect-error: This is a valid type
       cubes.push(cubeGroup);
     }
     
