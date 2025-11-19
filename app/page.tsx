@@ -11,7 +11,6 @@ export default function Home() {
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <div className="bg-black bg-opacity-40 backdrop-blur-sm p-8 rounded-lg text-white text-center shadow-lg">
           <h1 className="text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Pol Selles Climent</h1>
-          <p className="text-xl">Software engineer, crypto enthusiast, and entrepreneur.</p>
           <div className="flex justify-center gap-2 mt-2">
             <a href="mailto:me@pol.sc" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition-colors duration-300">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 inline-block">
