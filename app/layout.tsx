@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { Providers } from "./providers";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -15,8 +14,18 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Pol SC",
-  description: "My personal website",
+  metadataBase: new URL("https://pol.sc"),
+  title: "Pol Selles Climent",
+  description:
+    "Software developer working in crypto and cyber security. Economics student in Rotterdam.",
+  openGraph: {
+    title: "Pol Selles Climent",
+    description:
+      "Software developer working in crypto and cyber security. Economics student in Rotterdam.",
+    url: "https://pol.sc",
+    siteName: "pol.sc",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -25,10 +34,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <Providers>{children}</Providers>
-      </body>
+    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body>{children}</body>
     </html>
   );
 }
