@@ -17,11 +17,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://pol.sc"),
   title: "Pol Selles Climent",
   description:
-    "Software developer working in crypto and cyber security. Economics student in Rotterdam.",
+    "Software developer working in crypto and cyber security. Economics student at Erasmus University Rotterdam.",
   openGraph: {
     title: "Pol Selles Climent",
     description:
-      "Software developer working in crypto and cyber security. Economics student in Rotterdam.",
+      "Software developer working in crypto and cyber security. Economics student at Erasmus University Rotterdam.",
     url: "https://pol.sc",
     siteName: "pol.sc",
     type: "website",

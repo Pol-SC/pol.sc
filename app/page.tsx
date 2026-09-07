@@ -105,8 +105,8 @@ export default function Home() {
           </div>
           <div className="flex flex-col gap-4 leading-relaxed">
             <p>
-              I&apos;m {age}, from Spain &amp; Australia, and currently on Erasmus in Rotterdam
-              studying Economics. I work at{" "}
+              I&apos;m {age}, from Spain &amp; Australia, and currently studying Economics
+              at Erasmus University Rotterdam. I work at{" "}
               <a
                 href="https://re.xyz"
                 className="text-ink-bright underline decoration-ink-faint underline-offset-4 transition-colors hover:decoration-ink-bright"
